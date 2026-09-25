@@ -11,7 +11,9 @@ class Mpv360Controller() {
         var yaw: Double = 0.0,
         var pitch: Double = 0.0,
         var roll: Double = 0.0,
-        var fov: Double = Math.toRadians(100.0),
+        // Tuned for Xreal One (base, ~50° FOV): slightly narrower default than
+        // the One Pro so content fills the smaller panel. Adjustable in-app.
+        var fov: Double = Math.toRadians(90.0),
         var inputProjection: Int = 2,
         var eye: Int = 2,
         var fisheyeFov: Double = Math.toRadians(180.0),

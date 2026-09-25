@@ -41,9 +41,11 @@ class HeadTracker {
 
     private val alpha = 0.98f
 
-    // Scaling for VR output range
-    private val pitchScale = 1.5f
-    private val yawScale   = -1.5f
+    // Scaling for VR output range.
+    // Tuned for the Xreal One (base, ~50° FOV): amplified vs the One Pro so a
+    // given head turn covers more of the scene on the narrower display.
+    private val pitchScale = 1.7f
+    private val yawScale   = -1.7f
     private val rollScale  = 0.5f
 
     // -------------------------------------------------------------------------
